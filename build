@@ -1,0 +1,11 @@
+#!/bin/sh
+
+apk add --update build-base curl make perl perl-dev wget
+curl -L https://cpanmin.us | perl - App::cpanminus
+cpanm -n IPC::Run Swim Swim::Plugin::badge Swim::Plugin::cpan
+
+apk del build-base curl make perl-dev wget
+rm -rf /var/cache/apk/*
+du -sh /
+
+cp -p /usr/local/bin/swim /swim

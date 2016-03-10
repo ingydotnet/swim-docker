@@ -1,0 +1,14 @@
+ingy/swim
+=========
+
+Docker image for swim CLI
+
+= Synopsis
+
+  cat file.swim | docker run -i --entrypoint=/swim ingy/swim --to=pod --complete
+
+= Copyright & License
+
+Copyright 2016. Ingy döt Net.
+
+The MIT License (MIT)
